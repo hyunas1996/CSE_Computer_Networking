@@ -1,4 +1,4 @@
-### 1.2 Access Network
+### 1.2 Network Edge
 
 #### Intro 
 
@@ -147,3 +147,23 @@ access network를 제공하는 회사들이 있는데, SKT, KT, LG와 같은 통
 
 <img width="657" alt="스크린샷 2019-11-03 오후 11 54 02" src="https://user-images.githubusercontent.com/45492242/68087037-5c156900-fe95-11e9-9206-a6551965f4db.png">
 
+------
+
+<br/>
+
+#### 7) Host : sends packets of data 
+
+1. Host의 뜻 : <u>network communication application</u>을 hosting하고 있는 device
+
+   * network communication application이 다른 application들과 다른 점 : 다른 컴퓨터에 있는 상대에게 메세지를 보내거나 받을 수 있음
+
+2. Host의 주된 역할 : 메세지를 packet으로 잘라서 link로 내보내는 것 
+
+3. Packet : Host에서는 사용자의 application message를 발생 시키고, 이것을 access network (link)로 내보냄. 내보내기 전에 message를 packet이라고 불리는 chunk로 잘라줌
+
+4. **Packet Transmission Delay** 
+
+   Packet Transmission Delay (= packet 하나를 host에서 link로 내보내는데 걸리는 시간) = L/R sec
+
+   * Packet 하나의 크기가 L bits
+   * Access network에 연결되는 link의 transmission rate가 R bits/sec
